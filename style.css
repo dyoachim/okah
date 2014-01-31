@@ -1,0 +1,157 @@
+/*3d modeling*/
+.renderContainer {
+    margin: 180px;
+    -webkit-perspective: 800;
+    -webkit-perspective-origin: 50% -50%;
+    -webkit-transform: scale(1,1);
+}
+.origin {
+    position: relative;
+    margin: 0 auto;
+    -webkit-transition: -webkit-transform 2s;
+}
+.topOrigin {
+    height: 125px;
+    width: 290px;
+}
+.sideOrigin {
+    height: 390px;
+    width: 125px;
+}
+.frontOrigin,.fullOrigin {
+    height: 390px;
+    width: 290px;
+}
+
+.origin,.horizontal,.addpiece,.sideHako,.topHako,.frontHako,.secondSide,
+.plank0,.plankN,.slat0,.slat1,.slat2,.slat3,.slat4,.slat5,.slat6,.slat7,.slatN {
+    -webkit-transform-style: preserve-3d;
+}
+
+/* faces */
+    .face {
+        position: absolute;
+        background-color: rgb(256, 256, 256);
+        -webkit-box-shadow: inset 0 0 0 1px #000000;
+        /*background-color: rgba(50, 50, 50, 0.7);*/
+        width: 30px;
+        height: 390px;
+    }
+    .firstpiece .face {
+        width:20px;
+    }
+    .sixthpiece .face {
+        height: 65px;
+    }
+    .thirdpiece .face {
+        height: 85px;
+    }
+    .eighthpiece .face {
+        width:  10px;
+        height: 125px;
+    }
+    .fourthpiece .face {
+        width: 20px;
+        height: 125px;
+    }
+    .secondpieceA .face {
+        height: 210px;
+    }
+    .secondpiece .face {
+        height: 230px;
+    }
+    .fifthpiece .face {
+        height: 250px;
+    }
+    .seventhpiece .face {
+        width: 10px;
+        height: 390px;
+    }
+    .firstpiece .thin, .fourthpiece .thin {
+        width: 10px;
+    }
+    .secondpiece .thin, .secondpieceA .thin, .thirdpiece .thin, .fifthpiece .thin, .sixthpiece .thin, .seventhpiece .thin, .eighthpiece .thin {
+        width: 5px;
+    }
+    .cap, .fourthpiece .cap {
+        width: 20px;
+        height: 10px;
+    }
+    .secondpiece .cap, .secondpieceA .cap, .thirdpiece .cap, .fifthpiece .cap, .sixthpiece .cap {
+        width: 30px;
+        height: 5px;
+    }
+    .seventhpiece .cap, .eighthpiece .cap {
+        width: 10px;
+        height: 5px;
+    }
+
+
+
+/* draw rectangle */
+    .one, .fourthpiece .one {-webkit-transform: rotateX(90deg) translate3d(-5px, 0, 5px);}
+    .two {-webkit-transform: translate3d(-5px, 0, -5px);}
+    .three {-webkit-transform: rotateY(90deg) translateZ(-10px);}
+    .four {-webkit-transform: translate3d(-5px, 0, 5px);}
+    .five {-webkit-transform: rotateY(90deg) translateZ(10px);}
+    .six {-webkit-transform: rotateX(90deg) translate3d(-5px, 0, -385px);}
+
+    .secondpiece .one, .secondpieceA .one, .thirdpiece .one, .fifthpiece .one,
+    .sixthpiece .one, .seventhpiece .one, .eighthpiece .one {-webkit-transform: rotateX(90deg) translate3d(-12.5px, 0, 2.5px);}
+
+    .secondpiece .two, .secondpieceA .two, .thirdpiece .two, .fifthpiece .two,
+    .sixthpiece .two, .seventhpiece .two, .eighthpiece .two {-webkit-transform: translate3d(-12.5px, 0, -2.5px);}
+
+    .secondpiece .three, .thirdpiece .three, .fifthpiece .three, .seventhpiece .three, .eighthpiece .three {-webkit-transform: rotateY(90deg) translateZ(-15px);}
+
+    .secondpiece .four, .secondpieceA .four, .thirdpiece .four,
+    .fifthpiece .four, .sixthpiece .four, .seventhpiece .four, .eighthpiece .four {-webkit-transform: translate3d(-12.5px, 0, 2.5px);}
+
+    .secondpiece .five, .thirdpiece .five,
+    .fifthpiece .five, .sixthpiece .five {-webkit-transform: rotateY(90deg) translateZ(15px);}
+    .seventhpiece .five, .eighthpiece .five {-webkit-transform: rotateY(90deg) translateZ(-5px);}
+
+    .secondpiece .six {-webkit-transform: rotateX(90deg) translate3d(-12.5px, 0, -227.5px);}
+    .secondpieceA .six {-webkit-transform: rotateX(90deg) translate3d(-12.5px, 0, -207px);}
+    .thirdpiece .six {-webkit-transform: rotateX(90deg) translate3d(-12.5px, 0, -82px);}
+    .fourthpiece .six {-webkit-transform: rotateX(90deg) translate3d(-5px, 0, -120px);}
+    .fifthpiece .six {-webkit-transform: rotateX(90deg)  translate3d(-12.5px, 0, -247.5px);}
+    .sixthpiece .six {-webkit-transform: rotateX(90deg)  translate3d(-12.5px, 0, -62.5px);}
+    .seventhpiece .six {-webkit-transform: rotateX(90deg)  translate3d(-12.5px, 0, -387.5px);}
+    .eighthpiece .six {-webkit-transform: rotateX(90deg)  translate3d(-12.5px, 0, -122.5px);}
+
+/*position horizontals*/
+    .frontHako .horizontal { -webkit-transform: rotateZ(90deg) translate3d(157.5px, -100px, 2.5px);}
+    .sideHako .horizontal { -webkit-transform: rotateZ(90deg) translate3d(157.5px, 45px, 2.5px);}
+    .topHako .horizontal { -webkit-transform: rotateZ(90deg) translate3d(157.5px, -120px, 2.5px);}
+
+/*position planks*/
+    .topHako .plankN {-webkit-transform: translateX(270px);}
+    .sideHako .plankN {-webkit-transform: translateX(105px);}
+    .frontHako .plankN {-webkit-transform: translateX(250px);}
+
+
+/*position slats*/
+    .topHako .slat1 {-webkit-transform: translateX(47.5px);}
+    .topHako .slatN {-webkit-transform: translateX(95px);}
+    .slat1 {-webkit-transform: translateX(42.5px);}
+    .slat2 {-webkit-transform: translateX(85px);}
+    .slat3 {-webkit-transform: translateX(127.5px);}
+    .slat4 {-webkit-transform: translateX(170px);}
+    .slat5 {-webkit-transform: translateX(212.5px);}
+    .slat6 {-webkit-transform: translateX(255px);}
+    .slat7 {-webkit-transform: translateX(297.5px);}
+    .slatN {-webkit-transform: translateX(340px);}
+
+/*position addpieces*/
+    .addpiece .plank0 {-webkit-transform: translate3d(27.5px, 0, -2.5px);}
+    .topHako .addpiece .plankN {-webkit-transform: translate3d(267.5px, 0, -2.5px);}
+    .sideHako .addpiece .plankN {-webkit-transform: translate3d(103px, 0 , -2.5px);}
+    .frontHako .addpiece .plankN {-webkit-transform: translate3d(247.5px, 0 , -2.5px);}
+    .horizontal .addpiece {-webkit-transform: translate3d(0, 10px, -5px);}
+
+/*render full box */
+    .fullRender .topHako {-webkit-transform: translateY(-5px) rotateX(90deg);}
+    .fullRender .sideHako {-webkit-transform: translate3d(135px, 0, -25px) rotateY(90deg);}
+    .fullRender .secondSide .sideHako {-webkit-transform: translate3d(-145px, 0, 150px) rotateY(-90deg);}
+    .fullRender .frontHako {-webkit-transform: translate3d(10px, 0, 120px);}
